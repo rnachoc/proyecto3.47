@@ -29,7 +29,7 @@ public class Main {
 					}
 				
 				while (iNumDeclaracion <= 0) {
-					System.out.println("Indique el numero de la declaración: ");
+					System.out.println("Indique su Nombre: ");
 					iNumDeclaracion = Integer.parseInt(teclado.readLine());
 					if (iNumDeclaracion<=0) {
 						System.out.println("ERROR: El numero de la declaración debe ser mayor a 0.");

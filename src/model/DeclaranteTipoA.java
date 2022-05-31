@@ -40,15 +40,19 @@ public class DeclaranteTipoA {
 	}
 
 	public void setsNombre(String sNombre) {
-		this.sNombre = sNombre;
+		if (sNombre != null && sNombre.length() > 3 && sNombre.length() < 15) {
+			this.sNombre = sNombre;
+		}
 	}
 
 	public String getsPrimerApellido() {
-		return sPrimerApellido;
+			return sPrimerApellido;
 	}
 
 	public void setsPrimerApellido(String sPrimerApellido) {
-		this.sPrimerApellido = sPrimerApellido;
+		if (sPrimerApellido != null && sPrimerApellido.length() > 3 && sPrimerApellido.length() < 15) {
+			this.sPrimerApellido = sPrimerApellido;
+		}
 	}
 
 	public String getsSegundoApellido() {
@@ -56,7 +60,9 @@ public class DeclaranteTipoA {
 	}
 
 	public void setsSegundoApellido(String sSegundoApellido) {
-		this.sSegundoApellido = sSegundoApellido;
+		if (sSegundoApellido != null && sSegundoApellido.length() > 3 && sSegundoApellido.length() < 15) {
+			this.sSegundoApellido = sSegundoApellido;
+		}
 	}
 
 	public Integer getiTelefono() {
@@ -64,7 +70,9 @@ public class DeclaranteTipoA {
 	}
 
 	public void setiTelefono(Integer iTelefono) {
-		this.iTelefono = iTelefono;
+		if (iTelefono.longValue() == 9) {
+			this.iTelefono = iTelefono;
+		}
 	}
 
 	public Integer getiIdentificativo() {
@@ -72,7 +80,9 @@ public class DeclaranteTipoA {
 	}
 
 	public void setiIdentificativo(Integer iIdentificativo) {
-		this.iIdentificativo = iIdentificativo;
+		if (iIdentificativo.longValue() == 10) {
+			this.iIdentificativo = iIdentificativo;
+		}
 	}
 
 	public String getsAlfabetico() {
@@ -104,7 +114,9 @@ public class DeclaranteTipoA {
 	}
 
 	public void setfImporteAnual(Float fImporteAnual) {
-		this.fImporteAnual = fImporteAnual;
+		if (fImporteAnual > 0) {
+			this.fImporteAnual = fImporteAnual;
+		}
 	}
 
 	public Integer getiNumTotalMuebles() {
@@ -112,7 +124,9 @@ public class DeclaranteTipoA {
 	}
 
 	public void setiNumTotalMuebles(Integer iNumTotalMuebles) {
-		this.iNumTotalMuebles = iNumTotalMuebles;
+		if (iNumTotalMuebles > 0) {
+			this.iNumTotalMuebles = iNumTotalMuebles;
+		}
 	}
 
 	public Integer getIDENTIFICATIVO() {
