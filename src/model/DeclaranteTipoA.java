@@ -12,6 +12,7 @@ public class DeclaranteTipoA {
 	private Float fImporteAnual;
 	private Integer iNumTotalMuebles;
 	
+	public final Integer TIPOREGISTRO1 = 1;
 	public final Integer IDENTIFICATIVO = 347;
 
 	// Constructor
@@ -22,6 +23,7 @@ public class DeclaranteTipoA {
 	public DeclaranteTipoA(String sNombre, String sPrimerApellido, String sSegundoApellido, Integer iTelefono,
 			Integer iIdentificativo, String sAlfabetico, Integer iTotalPersonasEntidades, String sSignoImporteAnual,
 			Float fImporteAnual, Integer iNumTotalMuebles) {
+		
 		this.sNombre = sNombre;
 		this.sPrimerApellido = sPrimerApellido;
 		this.sSegundoApellido = sSegundoApellido;
